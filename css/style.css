@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+}
+/*====================== / FONTS / ======================*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/*====================== / BODY / ======================*/
+body{
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 70px;
+}
+/*====================== / HEADER / ======================*/
+header{
+    background-color: #00A9BD;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
+/*====================== / NAVIGATION & MENU / ======================*/
+.navbar-light .navbar-nav a.nav-link{
+    text-decoration: none;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav ul li a.active,
+nav ul li:hover a{
+    background-color: #fff;
+    color: #00A9BD;
+    border-radius: 3px;
+}
+/*====================== / TITLES / ======================*/
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+}
+h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    font-size: bold;
+}
+h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-size: bold;
+}
+h4{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+h5{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+h6{
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+/*====================== / HOME MAIN BANNER / ======================*/
+.home-main-banner-sliders{
+    list-style: none;
+    padding: 20px;
+}
+/*====================== / HOME DOWNLOAD SECTION / ======================*/
+.main-download-container{
+    text-align: center;
+    padding: 40px 0px;
+    background-color: #eee;
+}
+.btn.btn-primary{
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #444444;
+    border: 2px solid #fff;
+    color: #fff;
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+.btn.btn-primary:hover{
+    background-color: #fff;
+    border: 2px solid #444444;
+    color: #444444;
+}
+/*====================== / VIDEO / ======================*/
+.home-how-it-works{
+    text-align: center;
+    padding: 40px 0px;
+    background-color: rgb(107, 189, 182);
+}
+/*====================== / LAST TRIPS GRID / ======================*/
+.last-trips{
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 40px 0px;
+}
+.last-trips table{
+    width: 100%;
+    padding: 0px;
+}
+.last-trips table th{
+    background-color: #eee;
+    color: #00A9BD;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    padding: 5px;
+    border-bottom: 1px solid #545454;
+}
+.last-trips table td{
+    color: #666;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #e8e8e8;
+}
+/*====================== / POLITICS AND PRIVACY / ======================*/
+.politics-privacy{
+    padding: 40px 20px;
+}
+.politics-privacy p{
+    color: #666;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.politics-privacy ol{
+    list-style: lower-alpha;
+}
+.politics-privacy ol li{
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/*====================== / CONTACT FORM / ======================*/
+.contact-form{
+    padding: 40px 20px;
+}
+.contact-form fieldset{
+    border: none;
+    padding: 20px 0px;
+}
+.contact-form label{
+    text-align: right;
+    padding-right: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #666;
+    font-size: 14px;
+    width: 100%;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+    border: 1px solid #00A9BD;
+    outline: none;
+    box-shadow: none;
+}
+.contact-form label:after{
+    content: ":";
+}
+.contact-form textarea{
+    resize: none;
+    min-height: 100px;
+}
+.contact-form .submit-button{
+    background-color: #00A9BD;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 200px;
+}
+.contact-form .submit-button:hover{
+    background-color: #666;
+}
+/*====================== / FOOTER / ======================*/
+footer{
+    background-color: #FEFEFE;
+    box-shadow: 0px -7px 5px rgba(71, 71, 71, 0.2);
+    padding: 20px;
+}
+footer .row{
+    align-items: center;
+}
+footer .col-8{
+    font-size: 12px;
+    color: #444444;
+}
+footer .col-4{
+    text-align: right;
+}
+footer .col-4 img{
+    width: 120px;
+}
+header .navbar-light .navbar-toggler{
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+}
+header .navbar-light .navbar-toggler .navbar-toggler-icon{
+    width: 25px;
+    height: 25px;
+}
+@media screen and (max-width: 768px) {
+    .contact-form label{
+        text-align: left;
+    }
+    .contact-form .submit-button{
+        width: 100%;
+    }
+}
