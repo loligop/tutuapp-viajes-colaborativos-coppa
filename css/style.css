@@ -17,7 +17,7 @@ header{
     left: 0px;
     right: 0px;
     top: 0px;
-    z-index: 1;
+    z-index: 11;
 }
 /*====================== / NAVIGATION & MENU / ======================*/
 .navbar-light .navbar-nav a.nav-link{
@@ -33,6 +33,69 @@ nav ul li:hover a{
     color: #00A9BD;
     border-radius: 3px;
 }
+.navbar .checkbox {
+    position: absolute;
+    display: block;
+    height: 35px;
+    width: 35px;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.navbar .hamburger-lines {
+    display: block;
+    height: 20px;
+    width: 24px;
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar .hamburger-lines .line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background: #00A9BD;
+}
+
+.navbar .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+.navbar input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.navbar input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+    margin-left: 5px;
+background-color: #fff;}
+
+.navbar input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.navbar input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+    margin-left: 5px;
+background-color: #fff;}
 /*====================== / TITLES / ======================*/
 h1{
     font-family: 'Noto Sans', sans-serif;
@@ -219,6 +282,7 @@ header .navbar-light .navbar-toggler{
     width: 40px;
     height: 40px;
     padding: 0px;
+    position: relative;
 }
 header .navbar-light .navbar-toggler .navbar-toggler-icon{
     width: 25px;
