@@ -1,6 +1,7 @@
 @import "colors";
 @import "fonts";
 @import "animations";
+@import "structure";
 
 * {
     margin: 0px;
@@ -14,12 +15,17 @@ body {
 }
 
 /*====================== / HEADER / ======================*/
-header {
-    background-color: $main-color;
-    position: fixed;
+//MIXIN PARA HEADER
+@mixin fixed-top{
+	position: fixed;
     left: 0px;
     right: 0px;
     top: 0px;
+}
+
+header {
+    @include fixed-top;
+    background-color: $main-color;
     z-index: 11;
 }
 
@@ -193,10 +199,8 @@ h6 {
 .last-trips {
     display: block;
     margin: auto;
-    width: 90%;
     padding: 40px 0px;
     table {
-        width: 100%;
         padding: 0px;
         th {
             background-color: #eee;
@@ -224,6 +228,7 @@ h6 {
         line-height: 22px;
         margin-bottom: 10px;
     }
+    ul,
     ol {
         list-style: lower-alpha;
         li {
@@ -231,6 +236,30 @@ h6 {
             font-size: 14px;
             margin-bottom: 10px;
         }
+    }
+}
+/*====================== / TERMS AND CONDITIONS / ======================*/
+//EXTEND PARA TERMINOS Y CONDICIONES
+.terms-conditions {
+    @extend .politics-privacy;
+    p {
+        color: #333;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 6px;
+    }
+    ul,
+    ol {
+        list-style: lower-alpha;
+        li {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    }
+    a{
+        color: $main-color;
+        text-decoration: none;
     }
 }
 /*====================== / CONTACT FORM / ======================*/

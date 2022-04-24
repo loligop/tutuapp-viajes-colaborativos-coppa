@@ -1,0 +1,36 @@
+//BUCLE PARA ANCHOS
+@for $i from 1 through 100 {
+    .w-#{$i} {
+        width: 1% * $i !important;
+    }
+}
+
+//MAPS PARA CARDS DE BENEFICIOS
+$benefits-styles: (
+    fondo: #eee,
+    separacion: 20px,
+    parrafo: center,
+    tamanioTitulo: 20px,
+    borde : 1px solid #ccc,
+    radioCaja: 3px,
+    altoTotal: 100%,
+    tamanioIcono: 30px,
+    colorIcono: #00A9BD,
+    );
+
+.benefits-list{
+    .item {
+        background-color: map-get($benefits-styles, fondo);
+        padding: map-get($benefits-styles, separacion);
+        border: map-get($benefits-styles, borde);
+        border-radius: map-get($benefits-styles, radioCaja);
+        height: map-get($benefits-styles, altoTotal);
+        h4{
+            font-size: map-get($benefits-styles, tamanioTitulo);
+        }
+        i{
+            font-size: map-get($benefits-styles, tamanioIcono);
+            color: map-get($benefits-styles, colorIcono);
+        }
+    }
+} 
