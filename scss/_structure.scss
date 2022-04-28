@@ -25,7 +25,7 @@ $benefits-styles: (
         border: map-get($benefits-styles, borde);
         border-radius: map-get($benefits-styles, radioCaja);
         height: map-get($benefits-styles, altoTotal);
-        h4{
+        h2{
             font-size: map-get($benefits-styles, tamanioTitulo);
         }
         i{
