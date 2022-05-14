@@ -1,0 +1,3 @@
+TuTu App es una aplicación donde encontrás y publicas viajes para compartir en Uruguay. De esa manera logramos viajes más económicos, más rápidos y más frecuencias.
+
+En su web podrás obtener toda la información pertinente al proyecto. Desde los links de descarga en las tiendas de AppStore y Google Play hasta los canales de contacto, pasando por un listado donde se pueden ver los últimos viajes publicados.
